@@ -1,6 +1,13 @@
 # Rails 8 Boilerplate
 
-A minimal Ruby on Rails 8 application with no bloat.
+A minimal Ruby on Rails 8 application with the [Flipper gem](https://github.com/flippercloud/flipper) for demo
+
+## Clone
+1. Clone this repo then cd into the directory
+   ```bash
+      git clone git@github.com:reiallenramos/flipper-demo.git
+      cd flipper-demo
+   ````
 
 ## Setup
 
