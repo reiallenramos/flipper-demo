@@ -8,3 +8,52 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+ .checkmark {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #22c55e;
+  border-radius: 50%;
+  position: relative;
+}
+
+.checkmark::after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid #22c55e;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.crossmark {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ef4444;
+  border-radius: 50%;
+  position: relative;
+}
+
+.crossmark::before,
+.crossmark::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 12px;
+  background-color: #ef4444;
+}
+
+.crossmark::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.crossmark::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}

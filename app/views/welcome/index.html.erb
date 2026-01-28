@@ -1,8 +1,7 @@
-<h1>Rails 8 Boilerplate</h1>
-<p>A minimal Ruby on Rails 8 application with no bloat.</p>
+<h1>Flipper Demo</h1>
 
-<% if Flipper.enabled?(:search) %>
-Search is enabled
-<% else %>
-Search is disabled
-<% end %>
+<ul>
+  <li><%= link_to "Simple Demo", demo_simple_path %></li>
+  <li><%= link_to "Users Demo", demo_users_path %></li>
+  <li><%= link_to "Groups Demo", demo_groups_path %></li>
+</ul>

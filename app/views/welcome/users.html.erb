@@ -1,0 +1,12 @@
+<h1>Flipper Demo - Users</h1>
+
+<%= link_to "Back", root_path %>
+
+<ul>
+  <% @users.each do |user| %>
+    <li>
+      <%= user.name %>
+      <span class="<%= Flipper.enabled?(:search, user) ? "checkmark" : "crossmark" %>"></span>
+    </li>
+  <% end %>
+</ul>

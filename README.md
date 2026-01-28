@@ -1,13 +1,19 @@
-# Rails 8 Boilerplate
+# Rails 8 - Flipper demo
 
 A minimal Ruby on Rails 8 application with the [Flipper gem](https://github.com/flippercloud/flipper) for demo
 
 ## Clone
 1. Clone this repo then cd into the directory
    ```bash
-      git clone git@github.com:reiallenramos/flipper-demo.git
-      cd flipper-demo
-   ````
+   git clone git@github.com:reiallenramos/flipper-demo.git
+   cd flipper-demo
+   ```
+
+## Prerequisites
+1. Ruby 3.3.0
+   ```bash
+   rbenv install 3.3.0
+   ```
 
 ## Setup
 
@@ -18,12 +24,12 @@ A minimal Ruby on Rails 8 application with the [Flipper gem](https://github.com/
 
 2. Setup database:
    ```bash
-   rails db:create db:migrate
+   bundle exec rails db:create db:migrate
    ```
 
 3. Start the server:
    ```bash
-   rails server
+   bundle exec rails server
    ```
 
 4. Visit http://localhost:3000

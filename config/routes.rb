@@ -8,5 +8,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "welcome#index"
 
+  get "demo/simple", to: "welcome#simple"
+  get "demo/users", to: "welcome#users"
+  get "demo/groups", to: "welcome#groups"
+
   mount Flipper::UI.app(Flipper) => '/flipper'
 end

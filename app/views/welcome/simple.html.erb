@@ -1,0 +1,9 @@
+<h1>Flipper Demo - Simple</h1>
+
+<%= link_to "Back", root_path %>
+
+<p class="toggle-status">
+  <span class="<%= @toggle_status_search == "enabled" ? "checkmark" : "crossmark" %>"></span>
+  Search Feature is <%= @toggle_status_search %> for everyone.
+</p>
+
