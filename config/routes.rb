@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   get "demo/groups", to: "welcome#groups"
 
   mount Flipper::UI.app(Flipper) => '/flipper'
+  mount MissionControl::Jobs::Engine, at: "/mission_control"
 end
