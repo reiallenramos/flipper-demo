@@ -7,6 +7,7 @@
     <li>
       <%= user.name %>
       <span class="<%= Flipper.enabled?(:search, user) ? "checkmark" : "crossmark" %>"></span>
+      <%= button_to "Toggle", toggle_user_path(user), method: :post %>
     </li>
   <% end %>
 </ul>

@@ -13,6 +13,9 @@ gem 'flipper'
 gem 'flipper-active_record'
 gem "flipper-ui", "~> 1.3"
 
+gem "solid_queue", "~> 0.4.1"
+gem "mission_control-jobs"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 

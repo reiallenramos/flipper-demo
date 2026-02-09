@@ -48,4 +48,11 @@ Rails.application.configure do
 
   # Raise error when a before_action's only/except options reference missing actions.
   config.action_controller.raise_on_missing_callback_actions = true
+
+  # Use Solid Queue
+  config.active_job.queue_adapter = :solid_queue
+
+  # Mission Control
+  MissionControl::Jobs.http_basic_auth_user = "dev"
+  MissionControl::Jobs.http_basic_auth_password = "secret"
 end

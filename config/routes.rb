@@ -10,7 +10,9 @@ Rails.application.routes.draw do
 
   get "demo/simple", to: "welcome#simple"
   get "demo/users", to: "welcome#users"
+  post "demo/users/:id/toggle", to: "welcome#toggle_user", as: :toggle_user
   get "demo/groups", to: "welcome#groups"
 
   mount Flipper::UI.app(Flipper) => '/flipper'
+  mount MissionControl::Jobs::Engine, at: "/mission_control"
 end
