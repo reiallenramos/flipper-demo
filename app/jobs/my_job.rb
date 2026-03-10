@@ -3,7 +3,7 @@ class MyJob < ApplicationJob
   queue_as :low_priority
 
   def perform(*args)
-    user = User.find(args[0])
+    user = User.find(args[0]) # must be ID
     puts "Toggling for #{user.name}"
     toggle_user(user)
   end
